@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Profile - Student Portal</title>
+<link rel="stylesheet" href="Task6.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle">
+<label for="nav-toggle" class="overlay"></label>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo"><span>🎓</span> Student Portal</div>
+    <nav>
+      <a href="#"><i>🏠</i> Dashboard</a>
+      <a href="#" class="active"><i>👥</i> Students</a>
+      <a href="#"><i>📖</i> Courses</a>
+      <a href="#"><i>📊</i> Results</a>
+      <a href="#"><i>📅</i> Attendance</a>
+      <a href="#"><i>📋</i> Assignments</a>
+      <a href="#"><i>📢</i> Notices</a>
+      <a href="#"><i>⚙️</i> Settings</a>
+    </nav>
+    <div class="tagline"><span>🎓</span><p>Better Learning<br>Brighter Future</p></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <label for="nav-toggle" class="burger">☰</label>
+      <div>
+        <p class="crumbs">Students &rsaquo; <b>Student Details</b></p>
+        <h1>Student Profile</h1>
+      </div>
+      <div class="faculty"><span class="mini-av">F</span><div><b>Faculty</b></div></div>
+    </header>
+
+    <div class="content">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <section class="top-row">
+          <div class="card profile">
+            <div class="photo">
+              <svg viewBox="0 0 100 100"><circle cx="50" cy="38" r="18" fill="#f1c9a5"/><path d="M14 100c0-26 16-38 36-38s36 12 36 38z" fill="#1e3a8a"/><path d="M30 38c0-22 14-26 22-26s20 6 18 28c-4-12-10-16-20-16s-16 6-20 14z" fill="#2b1b12"/></svg>
+            </div>
+            <div class="p-info">
+              <h2>Rehan <span class="tag">Active</span></h2>
+              <p class="sub">BSCS (Bachelor of Science in Computer Science)<br>Semester 5</p>
+              <ul class="details">
+                <li><i>🆔</i><span>Roll No.</span><b>BSCS-348</b></li>
+                <li><i>🪪</i><span>CNIC</span><b>35202-1234567-3</b></li>
+                <li><i>✉️</i><span>Email</span><b>rehan@lgu.edu.pk</b></li>
+                <li><i>📞</i><span>Phone</span><b>+92 300 1234567</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="card stat">
+              <div class="ico blue">🎓</div>
+              <div><p>CGPA</p><h3>3.45 <small>/ 4.00</small></h3><em>↑ 0.12 <span>from last semester</span></em></div>
+            </div>
+            <div class="card stat">
+              <div class="ico blue">📖</div>
+              <div><p>Total Credits</p><h3>15 <small>/ 18</small></h3><div class="bar"><span style="width:83%"></span></div></div>
+            </div>
+            <div class="card stat">
+              <div class="ico green">📅</div>
+              <div><p>Attendance</p><h3>92%</h3><div class="bar green"><span style="width:92%"></span></div></div>
+            </div>
+            <div class="card stat">
+              <div class="ico green">🪪</div>
+              <div><p>Fee Status</p><h3 class="paid"><i>✔</i> Paid</h3></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card record">
+          <div class="tabs">
+            <a href="#" class="on">Academic Record</a><a href="#">Attendance</a><a href="#">Assignments</a><a href="#">Courses</a><a href="#">Fee History</a>
+          </div>
+          <div class="record-grid">
+            <div>
+              <h3>Semester Performance</h3>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Course Code</th><th>Course Name</th><th>Theory</th><th>Lab</th><th>Total</th><th>Grade</th></tr></thead>
+                  <tbody>
+                    <tr><td>CS-201</td><td>HCI</td><td>85</td><td>–</td><td>85</td><td><span class="g a">A</span></td></tr>
+                    <tr><td>CS-203</td><td>AI</td><td>78</td><td>–</td><td>78</td><td><span class="g b">B+</span></td></tr>
+                    <tr><td>CS-205</td><td>Web Technologies</td><td>88</td><td>–</td><td>88</td><td><span class="g a">A</span></td></tr>
+                    <tr><td>CS-207</td><td>Computer Networks</td><td>82</td><td>–</td><td>82</td><td><span class="g am">A-</span></td></tr>
+                    <tr><td>CS-209</td><td>Operating system</td><td>76</td><td>–</td><td>76</td><td><span class="g b">B+</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="trend">
+              <h3>CGPA Trend <select><option>Last 5 Semesters</option></select></h3>
+              <svg viewBox="0 0 400 190" role="img" aria-label="CGPA trend line chart">
+                <g stroke="#e5e7eb" stroke-width="1">
+                  <line x1="40" y1="10" x2="390" y2="10"/><line x1="40" y1="45" x2="390" y2="45"/>
+                  <line x1="40" y1="80" x2="390" y2="80"/><line x1="40" y1="115" x2="390" y2="115"/><line x1="40" y1="150" x2="390" y2="150"/>
+                </g>
+                <g fill="#6b7280" font-size="10" text-anchor="end">
+                  <text x="30" y="14">4.0</text><text x="30" y="49">3.5</text><text x="30" y="84">3.0</text><text x="30" y="119">2.5</text><text x="30" y="154">2.0</text>
+                </g>
+                <polygon points="50,108 130,90 210,73 290,62 370,48 370,150 50,150" fill="#2563eb" opacity=".12"/>
+                <polyline points="50,108 130,90 210,73 290,62 370,48" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+                <g fill="#fff" stroke="#2563eb" stroke-width="2">
+                  <circle cx="50" cy="108" r="4"/><circle cx="130" cy="90" r="4"/><circle cx="210" cy="73" r="4"/><circle cx="290" cy="62" r="4"/><circle cx="370" cy="48" r="4"/>
+                </g>
+                <rect x="348" y="12" width="44" height="22" rx="5" fill="#111827"/>
+                <polygon points="364,34 376,34 370,41" fill="#111827"/>
+                <text x="370" y="27" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">3.45</text>
+                <g fill="#6b7280" font-size="10" text-anchor="middle">
+                  <text x="50" y="170">Sem 1</text><text x="130" y="170">Sem 2</text><text x="210" y="170">Sem 3</text><text x="290" y="170">Sem 4</text><text x="370" y="170">Sem 5</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right">
+        <div class="hero">
+          <div class="photo sm">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="38" r="18" fill="#f1c9a5"/><path d="M14 100c0-26 16-38 36-38s36 12 36 38z" fill="#1e3a8a"/><path d="M30 38c0-22 14-26 22-26s20 6 18 28c-4-12-10-16-20-16s-16 6-20 14z" fill="#2b1b12"/></svg>
+            <span class="tag on-photo">Active</span>
+          </div>
+          <div><h2>Rehan</h2><p>BSCS - Semester 5</p></div>
+          <a href="#" class="edit">✏️ Edit Profile</a>
+        </div>
+
+        <div class="card">
+          <h3>Key Information</h3>
+          <dl class="kv">
+            <dt>Program</dt><dd>BSCS</dd>
+            <dt>Semester</dt><dd>5</dd>
+            <dt>Batch</dt><dd>2023</dd>
+            <dt>Section</dt><dd>A</dd>
+            <dt>Academic Status</dt><dd>Regular</dd>
+          </dl>
+        </div>
+
+        <div class="card">
+          <h3>Quick Actions</h3>
+          <a href="#" class="qa fill">📄 View Full Transcript</a>
+          <a href="#" class="qa">⬇️ Download Result</a>
+          <a href="#" class="qa">📅 View Attendance</a>
+          <a href="#" class="qa">💬 Send Message</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <section class="bottom">
+      <div class="card">
+        <h3>Recent Activity</h3>
+        <ul class="activity">
+          <li><i class="c1">📄</i><div><b>Assignment Submitted</b><small>Web Technologies - Assignment 2</small></div><div class="when">Sep 4, 2026 - 09:24 AM<span class="pill sub">Submitted</span></div></li>
+          <li><i class="c2">📅</i><div><b>Attendance Marked</b><small>Computer Networks - Lecture</small></div><div class="when">Sep 3, 2026 - 09:15 AM<span class="pill pre">Present</span></div></li>
+          <li><i class="c3">📊</i><div><b>Result Updated</b><small>Database Systems - Mid Term</small></div><div class="when">Aug 24, 2026 - 03:45 PM<span class="pill res">B+</span></div></li>
+          <li><i class="c4">📢</i><div><b>Notice</b><small>Examination Schedule Released</small></div><div class="when">Aug 20, 2026 - 10:30 AM<span class="pill new">New</span></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Course Progress</h3>
+        <div class="rings">
+          <div class="ring-item"><div class="ring" style="--p:78;--c:#2563eb"><span>78%</span></div><small>Data Structures &amp; Algorithms</small><b class="g a">A</b></div>
+          <div class="ring-item"><div class="ring" style="--p:65;--c:#0d9488"><span>65%</span></div><small>Database Systems</small><b class="g b">B+</b></div>
+          <div class="ring-item"><div class="ring" style="--p:88;--c:#0f766e"><span>88%</span></div><small>Web Technologies</small><b class="g a">A</b></div>
+          <div class="ring-item"><div class="ring" style="--p:72;--c:#9333ea"><span>72%</span></div><small>Computer Networks</small><b class="g b">B+</b></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Performance Summary <span class="legend"><i class="t"></i>Theory <i class="l"></i>Lab</span></h3>
+        <div class="chart">
+          <div class="yaxis"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div>
+          <div class="plot">
+            <div class="grp"><div class="b t" style="height:85%"></div><div class="b l" style="height:70%"></div></div>
+            <div class="grp"><div class="b t" style="height:78%"></div><div class="b l" style="height:62%"></div></div>
+            <div class="grp"><div class="b t" style="height:88%"></div><div class="b l" style="height:68%"></div></div>
+            <div class="grp"><div class="b t" style="height:82%"></div><div class="b l" style="height:64%"></div></div>
+            <div class="grp"><div class="b t" style="height:76%"></div><div class="b l" style="height:66%"></div></div>
+          </div>
+        </div>
+        <div class="xaxis"><span>CS-201</span><span>CS-203</span><span>CS-205</span><span>CS-207</span><span>CS-209</span></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
